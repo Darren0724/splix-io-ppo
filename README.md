@@ -54,4 +54,5 @@ Our model achieves the following performance on :
 ## Contributing
 
 We have a nice result for training an AI playing splix.io in the phase 1, 士氣大振.
+
 We can try to do phase 2 (multi-agent) in the future.

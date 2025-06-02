@@ -8,7 +8,7 @@ Train an AI to play splix.io by DRL method.
 
 ## Score
 
-|         |   reward            | 
+|  Event       |   Reward            | 
 | ------------------ |---------------- | 
 | each cell enclosed   |   +1.0     | 
 | invalid move | -1.0 | 
@@ -58,7 +58,7 @@ There's no pre-trained model for our project.
 
 Our model achieves the following performance by our testing:
 
-| Model name         | avg. reward  | std |
+| Model name         | Avg. reward  | Std |
 | ------------------ |---------------- | -------------- |
 | Original env   |   -0.6     |  0.02           |
 | Reward Shaping | 83.4 | 46.6 |

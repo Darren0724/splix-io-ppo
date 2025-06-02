@@ -30,14 +30,13 @@ NUM_ACTIONS = 4       # Up, Right, Down, Left
 
 # Shaped Reward constants
 REWARD_PER_CELL_FILLED = 1.0
-REWARD_PER_CELL_FILLED_SHAPED = 5.0
-PENALTY_DEATH = -20.0
+PENALTY_DEATH = 0.0
 PENALTY_INVALID_MOVE = -1.0
 PENALTY_TIME_STEP = -0.1
-PENALTY_TRAIL_TOO_FAR = -0.2
-REWARD_EXTEND_TRAIL_ON_EMPTY = 0.05
+PENALTY_TRAIL_TOO_FAR = -0.0
+REWARD_EXTEND_TRAIL_ON_EMPTY = 0.0
 MAX_DISTANCE = 3
-OBS_SIZE = 5
+OBS_SIZE = 11
 ACTUAL_GRID_SIZE = 30 # Actual grid size for the environment, larger than OBS_SIZE
 
 
@@ -275,7 +274,7 @@ class SplixIOEnv(gym.Env):
             if len(self.player_trail) > 1: # If there's a trail to close
                 current_trail_for_fill = self.player_trail + [self.player_pos.copy()] # Include current pos to close loop
                 filled_count = self._fill_territory(current_trail_for_fill)
-                reward += filled_count * REWARD_PER_CELL_FILLED_SHAPED
+                reward += filled_count * REWARD_PER_CELL_FILLED
                 
                 # Convert the entire trail that just closed into territory on both grids
                 for r_trail, c_trail in current_trail_for_fill: # Use current_trail_for_fill

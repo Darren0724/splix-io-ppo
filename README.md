@@ -1,5 +1,3 @@
-
-
 # The splix.io AI based on deep reinforcement learning (Phase One - Territory Occupying AI)
 
 This repository is the official implementation of NTU-DRL Class Final Project.
@@ -38,17 +36,19 @@ python <training_file_name>.py
 
 There's no pre-trained model for our project.
 
+
+
 ## Results
 
-Our model achieves the following performance on :
+Our model achieves the following performance by our testing:
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
+| Model name         | avg. reward  | std |
 | ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
+| Original env   |   -0.6     |  0.02           |
+| Reward Shaping | 83.4 | 46.6 |
+| Eight Directional Sign Arrays and Last Action | 110.93 | 125.9 |
+| Distance Arrays and Last Action | 150.18 |  126.92 |
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
 
 ## Contributing

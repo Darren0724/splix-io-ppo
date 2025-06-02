@@ -1,10 +1,8 @@
->📋  A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
 
-This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
+# The splix.io AI based on deep reinforcement learning (Phase One - Territory Occupying AI)
 
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
+This repository is the official implementation of NTU-DRL Class Final Project.
 
 ## Requirements
 
@@ -14,35 +12,31 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+"It's recommended to use venv to run it."
 
 ## Training
 
-To train the model(s) in the paper, run this command:
+To train the model(s) in the paper, cd to the folder and run this command:
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python <training_file_name>.py 
 ```
 
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
+You can modify the parameters like episodes, load_model and save_video path for usage.
 
 ## Evaluation
 
-To evaluate my model on ImageNet, run:
+To just evaluation the model, turn the flag to True and run this command. 
 
 ```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
+python <training_file_name>.py 
 ```
 
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
+
 
 ## Pre-trained Models
 
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+There's no pre-trained model for our project.
 
 ## Results
 
@@ -59,4 +53,5 @@ Our model achieves the following performance on :
 
 ## Contributing
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+We have a nice result for training an AI playing splix.io in the phase 1, 士氣大振.
+We can try to do phase 2 (multi-agent) in the future.

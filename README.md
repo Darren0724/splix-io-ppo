@@ -2,6 +2,20 @@
 
 This repository is the official implementation of NTU-DRL Class Final Project.
 
+## Introduction
+
+Train an AI to play splix.io by DRL method.
+
+## Score
+
+|         |   reward            | 
+| ------------------ |---------------- | 
+| each cell enclosed   |   +1.0     | 
+| invalid move | -1.0 | 
+|  time step | -0.1 | 
+
+
+
 ## Requirements
 
 To install requirements:
@@ -11,6 +25,8 @@ pip install -r requirements.txt
 ```
 
 "It's recommended to use venv to run it."
+
+
 
 ## Training
 
